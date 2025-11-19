@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your personalized yoga session with Rachel McCorry in Miami. Contact for private sessions, group classes, or corporate wellness programs.">
+    <title>Book Now | Contact Rachel McCorry | Miami Yoga Instructor</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧘</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Yoga x Rachel McCorry</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="service-areas.html">Service Areas</a></li>
+                <li><a href="contact.html" class="nav-cta active">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-label">Let's Connect</span>
+            <h1>Begin Your Yoga Journey</h1>
+            <p>Book your complimentary consultation or session</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Schedule Your Session</h2>
+                    <p class="form-intro">Fill out the form below and I'll get back to you within 24 hours. For immediate questions, feel free to call or email directly.</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <!-- Email & Phone -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(305) 555-1234">
+                            </div>
+                        </div>
+
+                        <!-- Service Type -->
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="private">Private Session (1-on-1)</option>
+                                <option value="group">Small Group Class (2-4 people)</option>
+                                <option value="corporate">Corporate Wellness Program</option>
+                                <option value="prenatal">Prenatal/Postnatal Yoga</option>
+                                <option value="restorative">Restorative/Therapeutic Yoga</option>
+                                <option value="outdoor">Outdoor/Beach Session</option>
+                                <option value="consultation">Complimentary Consultation</option>
+                            </select>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="form-group">
+                            <label for="location">Neighborhood/Location *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select your area</option>
+                                <option value="brickell">Brickell</option>
+                                <option value="downtown">Downtown Miami</option>
+                                <option value="midtown">Midtown</option>
+                                <option value="coconut-grove">Coconut Grove</option>
+                                <option value="edgewater">Edgewater</option>
+                                <option value="other">Other (please specify in message)</option>
+                            </select>
+                        </div>
+
+                        <!-- Experience Level -->
+                        <div class="form-group">
+                            <label for="experience">Yoga Experience Level *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select your level</option>
+                                <option value="beginner">Complete Beginner</option>
+                                <option value="some">Some Experience (less than 1 year)</option>
+                                <option value="intermediate">Intermediate (1-3 years)</option>
+                                <option value="advanced">Advanced (3+ years)</option>
+                            </select>
+                        </div>
+
+                        <!-- Preferred Schedule -->
+                        <div class="form-group">
+                            <label>Preferred Session Times (check all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="times" value="early-morning">
+                                    <span>Early Morning (6-8am)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="times" value="midday">
+                                    <span>Midday/Lunch (12-2pm)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="times" value="evening">
+                                    <span>Evening (5-8pm)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="times" value="weekend">
+                                    <span>Weekends</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="times" value="flexible">
+                                    <span>Flexible</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Goals -->
+                        <div class="form-group">
+                            <label for="goals">What are your goals for practice?</label>
+                            <textarea id="goals" name="goals" rows="3" placeholder="e.g., stress relief, flexibility, strength building, injury recovery, general wellness..."></textarea>
+                        </div>
+
+                        <!-- Injuries/Limitations -->
+                        <div class="form-group">
+                            <label for="limitations">Any injuries or physical limitations I should know about?</label>
+                            <textarea id="limitations" name="limitations" rows="2" placeholder="This helps me customize your practice safely"></textarea>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Anything else you'd like me to know?"></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-primary btn-large">Send Inquiry</button>
+                        <p class="form-note">By submitting this form, you agree to be contacted by Yoga x Rachel McCorry regarding your inquiry.</p>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been received. I'll respond within 24 hours to discuss your practice and schedule.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-sidebar">
+                    <div class="contact-info-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:rachel@yogaxrachelmccorry.com">rachel@yogaxrachelmccorry.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+13055551234">(305) 555-1234</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com" target="_blank">@rachelmccorryoga</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <h4>Service Areas</h4>
+                                <p>Brickell, Downtown, Midtown, Coconut Grove, Edgewater & nearby areas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hours-card">
+                        <h3>Availability</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>6am - 8pm</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>7am - 6pm</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>8am - 4pm</span>
+                            </div>
+                        </div>
+                        <p class="hours-note">Flexible scheduling available for regular clients. Early morning and evening slots book quickly!</p>
+                    </div>
+
+                    <div class="consultation-card">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                        <h4>Not Sure Where to Start?</h4>
+                        <p>Book a complimentary 15-minute phone consultation. We'll discuss your goals, answer questions, and find the perfect practice for you.</p>
+                    </div>
+
+                    <div class="testimonial-mini">
+                        <p>"Rachel makes booking so easy and is incredibly responsive. She worked around my hectic schedule and found the perfect time for our weekly sessions."</p>
+                        <strong>- Michael K., Downtown</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick -->
+    <section class="faq-quick">
+        <div class="container">
+            <h2>Quick Questions</h2>
+            <div class="faq-quick-grid">
+                <div class="faq-quick-item">
+                    <h4>How far in advance should I book?</h4>
+                    <p>I recommend booking at least 3-5 days in advance, though last-minute sessions are sometimes available. For regular weekly slots, booking 1-2 weeks ahead ensures your preferred time.</p>
+                </div>
+                <div class="faq-quick-item">
+                    <h4>What's your cancellation policy?</h4>
+                    <p>Please provide 24 hours notice for cancellations or rescheduling. Life happens—if you need to cancel with less notice due to illness or emergency, just let me know.</p>
+                </div>
+                <div class="faq-quick-item">
+                    <h4>Do you offer package deals?</h4>
+                    <p>Yes! I offer discounted packages for clients booking multiple sessions. We can discuss package options during your consultation or first session.</p>
+                </div>
+                <div class="faq-quick-item">
+                    <h4>How long does it take to hear back?</h4>
+                    <p>I respond to all inquiries within 24 hours, usually much sooner. If you don't hear from me, please check your spam folder or reach out via phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Yoga x Rachel McCorry</h3>
+                    <p>Bringing personalized yoga practice to Miami's most beautiful neighborhoods. Every body, every level, every goal.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Rachel</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="service-areas.html">Service Areas</a></li>
+                        <li><a href="contact.html">Book Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="service-areas.html#brickell">Brickell</a></li>
+                        <li><a href="service-areas.html#downtown">Downtown Miami</a></li>
+                        <li><a href="service-areas.html#midtown">Midtown</a></li>
+                        <li><a href="service-areas.html#coconut-grove">Coconut Grove</a></li>
+                        <li><a href="service-areas.html#edgewater">Edgewater</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:rachel@yogaxrachelmccorry.com">rachel@yogaxrachelmccorry.com</a></li>
+                        <li><a href="tel:+13055551234">(305) 555-1234</a></li>
+                    </ul>
+                    <div class="newsletter-signup">
+                        <p>Join my newsletter for yoga tips and Miami wellness insights:</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit" class="btn btn-small">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yoga x Rachel McCorry. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
