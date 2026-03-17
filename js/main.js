@@ -1,5 +1,5 @@
 /**
- * Yoga x Rachel McCorry - Main JavaScript
+ * Solana Yoga - Main JavaScript
  * Handles navigation, forms, animations, and interactive elements
  */
 
