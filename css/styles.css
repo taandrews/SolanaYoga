@@ -1032,7 +1032,15 @@ section {
     }
 
     .hero-video-container {
-        padding-top: env(safe-area-inset-top, 0);  /* iOS notch safety */
+        padding-top: env(safe-area-inset-top, 0);
+    }
+
+    .hero-video {
+        display: none;
+    }
+
+    .hero-video-container {
+        background: url('../images/pexels-elly-fairytale-3822864.jpg') center/cover no-repeat;
     }
 
     .hero-overlay {
